@@ -56,6 +56,7 @@ local function bindProperty(instance: Instance, property: string, value: PubType
 			if not willUpdate then
 				willUpdate = true
 				task.defer(function()
+					task.wait()
 					willUpdate = false
 					setProperty(instance, property, value:get(false))
 				end)

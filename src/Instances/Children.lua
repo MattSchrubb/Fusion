@@ -122,7 +122,7 @@ function Children:apply(propValue: any, applyTo: Instance, cleanupTasks: {PubTyp
 		end
 
 		-- disconnect observers which weren't reused
-		for oldState, disconnect in pairs(oldDisconnects) do
+		for _, disconnect in pairs(oldDisconnects) do
 			disconnect()
 		end
 	end
