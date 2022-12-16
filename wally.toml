@@ -1,7 +1,7 @@
 [package]
 name = "mattschrubb/fusion"
-description = "Fusion version 0.2.0"
-version = "0.2.0-temp"
+description = "Fusion version 0.2.0 fork"
+version = "0.2.0"
 
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
