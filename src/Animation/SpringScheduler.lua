@@ -83,7 +83,9 @@ local function updateAllSprings()
 	end
 end
 
-RunService:UnbindFromRenderStep("__FusionSpringScheduler")
+pcall(function()
+	RunService:UnbindFromRenderStep("__FusionSpringScheduler")
+end)
 RunService:BindToRenderStep(
 	"__FusionSpringScheduler",
 	Enum.RenderPriority.First.Value,

@@ -65,7 +65,9 @@ local function updateAllTweens()
 	end
 end
 
-RunService:UnbindFromRenderStep("__FusionTweenScheduler")
+pcall(function()
+	RunService:UnbindFromRenderStep("__FusionTweenScheduler")
+end)
 RunService:BindToRenderStep(
 	"__FusionTweenScheduler",
 	Enum.RenderPriority.First.Value,
